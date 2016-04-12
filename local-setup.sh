@@ -21,7 +21,6 @@ fi
 eval $( docker-machine env $DOCKER_MACHINE )
 
 export TARGET_HOST=$( docker-machine ip $DOCKER_MACHINE )
-export LOGSTASH_HOST=$( docker-machine ip $DOCKER_MACHINE )
 export CUSTOM_NETWORK_NAME=adop
 
 if ( docker network ls | grep -q " $CUSTOM_NETWORK_NAME " ) ; then 
