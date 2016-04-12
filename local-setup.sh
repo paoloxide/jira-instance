@@ -30,10 +30,6 @@ else
   docker network create $CUSTOM_NETWORK_NAME
 fi
 
-docker-compose -f compose/elk.yml up -d
-
-docker-compose pull
-
 . ./env.config.sh
 
 docker-compose -f docker-compose.yml -f etc/volumes/local/default.yml -f etc/logging/syslog/default.yml up -d

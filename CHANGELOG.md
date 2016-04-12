@@ -6,3 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## 0.1.0 - 2016-02-01
 ### Added
 - Initial creation
+
+## 0.0.1 - 2016-04-12
+### Jira Instance
+- Removed unnecessary instances
+- Retained Jira, NGINX, and LDAP
